@@ -24,7 +24,7 @@ SELECT DATEDIFF(max(rental_date),min(rental_date)) as operating_days
 FROM rental;
 
 -- 6. Show rental info with additional columns month and weekday. Get 20.
-SELECT *, MONTH(rental_date) month , WEEKDAY(rental_date) as day
+SELECT *, MONTH(rental_date) month , WEEKDAY(rental_date) as weekday
 FROM rental
 ORDER BY month asc
 LIMIT 20;
